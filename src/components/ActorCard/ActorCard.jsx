@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 
 export default function ActorCard({ act, idx }) {
-
+console.log(act,idx)
     return (
         <>
     
             <div className="ActorCard" idx={idx} >
             <Link to={`/actors/${act}`}> 
-                <img src={`https://picsum.photos/200/300?random=${idx}`} alt="Actor" />
+            
+                <img src={`https://picsum.photos/200?random=${idx}`} alt="Actor" />
                 <h5>{act}</h5>
              </Link>
             </div>

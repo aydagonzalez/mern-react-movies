@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./LoginPage.css"
 
 export default function LoginPage({ addUser }) {
     //This updates use state from App page

@@ -11,16 +11,17 @@ export default function ActorListPage() {
         )
     )
 )
-const actorsSet = new Set(result);
+const actorsSet = new Set(result,);
 const allActors = Array.from(actorsSet)
 
 return (
-    <>
+    <>        <h1>All Actors</h1>
     {/* { console.log(actorsSet)} */}
     <div className="ActorListPage" >
+
         {allActors.map((act, idx) => 
 
-            <ActorCard className="ActorCard" key={idx} act={act} />
+            <ActorCard className="ActorCard" key={idx} act={act} idx={idx} />
         )
     }
     </div>

@@ -1,5 +1,5 @@
 
-// import "./MovieCard.css"
+import "../MovieCard/MovieCard.css"
 
 
 
